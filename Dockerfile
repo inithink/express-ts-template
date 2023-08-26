@@ -1,8 +1,17 @@
-FROM node:18-alpine3.14
+FROM node:18-alpine3.14 as base
 WORKDIR /app
-COPY package.json yarn.lock .yarn .yarnrc.yml ./
-COPY .yarn ./.yarn
+COPY package.json yarn.lock ./
+RUN yarn install --frozen-lockfile --production
+
+FROM base as builder
 RUN yarn install
 COPY . .
 RUN yarn build
-CMD ["node", "--require", "./.pnp.cjs", "dist/main.js"]
+
+FROM base as runner
+WORKDIR /app
+ENV NODE_ENV production
+ENV PORT 80
+COPY --from=builder /app/dist .
+EXPOSE 80
+CMD ["node", "--require", "source-map-support/register", "main.js"]

@@ -1,4 +1,5 @@
 import dotenv from 'dotenv'
+
 dotenv.config()
 
 import app from "./app";
@@ -18,7 +19,7 @@ function onError(error: any) {
     throw error;
   }
 
-  const bind =  'Port ' + port;
+  const bind = 'Port ' + port;
 
   switch (error.code) {
     case 'EACCES':
