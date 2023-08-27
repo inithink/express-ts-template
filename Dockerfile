@@ -4,7 +4,6 @@ COPY package.json yarn.lock ./
 RUN yarn install --frozen-lockfile --production
 
 FROM base as builder
-RUN yarn install
 COPY . .
 RUN yarn build
 
