@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="433a55cd-9cb7-4549-a3b5-87bcfc332c14" name="Changes" comment="vscode 삭제">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="433a55cd-9cb7-4549-a3b5-87bcfc332c14" name="Changes" comment="esbuild 추가">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +57,7 @@
       <recent name="$PROJECT_DIR$/src/routes" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.Dockerfile">
+  <component name="RunManager" selected="npm.build">
     <configuration name="GET /.should return 200" type="JavaScriptTestRunnerVitest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <vitest-package value="$PROJECT_DIR$/node_modules/vitest" />
@@ -111,8 +108,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="npm.build" />
+        <item itemvalue="Docker.Dockerfile" />
         <item itemvalue="Vitest.GET /.should return 200" />
         <item itemvalue="npm.start" />
       </list>
@@ -130,7 +127,7 @@
       <workItem from="1693056985964" duration="1341000" />
       <workItem from="1693064380659" duration="761000" />
       <workItem from="1693122930126" duration="11000" />
-      <workItem from="1693128221838" duration="277000" />
+      <workItem from="1693128221838" duration="324000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -164,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693056152217</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="esbuild 추가">
+      <option name="closed" value="true" />
+      <created>1693128518410</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1693128518410</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +191,7 @@
     <MESSAGE value="빌드 최적화" />
     <MESSAGE value="vitest 추가" />
     <MESSAGE value="vscode 삭제" />
-    <option name="LAST_COMMIT_MESSAGE" value="vscode 삭제" />
+    <MESSAGE value="esbuild 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="esbuild 추가" />
   </component>
 </project>
