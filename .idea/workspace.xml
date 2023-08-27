@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="433a55cd-9cb7-4549-a3b5-87bcfc332c14" name="Changes" comment="minify">
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    <list default="true" id="433a55cd-9cb7-4549-a3b5-87bcfc332c14" name="Changes" comment="빌드시 production용 dependency만 다운로드">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +56,7 @@
       <recent name="$PROJECT_DIR$/src/routes" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.build">
+  <component name="RunManager" selected="Docker.Dockerfile">
     <configuration name="GET /.should return 200" type="JavaScriptTestRunnerVitest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <vitest-package value="$PROJECT_DIR$/node_modules/vitest" />
@@ -74,6 +74,16 @@
     <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
       <deployment type="dockerfile">
         <settings>
+          <option name="imageTag" value="test" />
+          <option name="containerName" value="test" />
+          <option name="portBindings">
+            <list>
+              <DockerPortBindingImpl>
+                <option name="containerPort" value="80" />
+                <option name="hostPort" value="4500" />
+              </DockerPortBindingImpl>
+            </list>
+          </option>
           <option name="sourceFilePath" value="Dockerfile" />
         </settings>
       </deployment>
@@ -105,10 +115,16 @@
       <envs />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Docker.Dockerfile" />
+      <item itemvalue="npm.build" />
+      <item itemvalue="npm.start" />
+      <item itemvalue="Vitest.GET /.should return 200" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="Docker.Dockerfile" />
+        <item itemvalue="npm.build" />
         <item itemvalue="Vitest.GET /.should return 200" />
         <item itemvalue="npm.start" />
       </list>
@@ -126,7 +142,7 @@
       <workItem from="1693056985964" duration="1341000" />
       <workItem from="1693064380659" duration="761000" />
       <workItem from="1693122930126" duration="11000" />
-      <workItem from="1693128221838" duration="439000" />
+      <workItem from="1693128221838" duration="1077000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -176,7 +192,23 @@
       <option name="project" value="LOCAL" />
       <updated>1693128562133</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="라이센스 comment 삭제">
+      <option name="closed" value="true" />
+      <created>1693128684962</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1693128684962</updated>
+    </task>
+    <task id="LOCAL-00008" summary="빌드시 production용 dependency만 다운로드">
+      <option name="closed" value="true" />
+      <created>1693128814430</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1693128814430</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,6 +232,8 @@
     <MESSAGE value="vscode 삭제" />
     <MESSAGE value="esbuild 추가" />
     <MESSAGE value="minify" />
-    <option name="LAST_COMMIT_MESSAGE" value="minify" />
+    <MESSAGE value="라이센스 comment 삭제" />
+    <MESSAGE value="빌드시 production용 dependency만 다운로드" />
+    <option name="LAST_COMMIT_MESSAGE" value="빌드시 production용 dependency만 다운로드" />
   </component>
 </project>
