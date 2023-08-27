@@ -12,6 +12,6 @@ FROM base as runner
 WORKDIR /app
 ENV NODE_ENV production
 ENV PORT 80
-COPY --from=builder /app/dist .
+COPY --from=builder /app/index.js .
 EXPOSE 80
-CMD ["node", "--require", "source-map-support/register", "main.js"]
+CMD ["node", "--require", "source-map-support/register", "index.js"]
