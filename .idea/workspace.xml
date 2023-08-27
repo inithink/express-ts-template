@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="433a55cd-9cb7-4549-a3b5-87bcfc332c14" name="Changes" comment="esbuild 추가">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="433a55cd-9cb7-4549-a3b5-87bcfc332c14" name="Changes" comment="minify">
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -127,7 +126,7 @@
       <workItem from="1693056985964" duration="1341000" />
       <workItem from="1693064380659" duration="761000" />
       <workItem from="1693122930126" duration="11000" />
-      <workItem from="1693128221838" duration="324000" />
+      <workItem from="1693128221838" duration="439000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -169,7 +168,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693128518410</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="minify">
+      <option name="closed" value="true" />
+      <created>1693128562132</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1693128562133</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,6 +199,7 @@
     <MESSAGE value="vitest 추가" />
     <MESSAGE value="vscode 삭제" />
     <MESSAGE value="esbuild 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="esbuild 추가" />
+    <MESSAGE value="minify" />
+    <option name="LAST_COMMIT_MESSAGE" value="minify" />
   </component>
 </project>

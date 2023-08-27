@@ -5,7 +5,7 @@
   "scripts": {
     "start": "yarn build && yarn build -- --watch & npx nodemon dist/main.js --delay 0.3",
     "test": "vitest",
-    "build": "esbuild src/main.ts --platform=node --bundle --sourcemap --outfile=index.js --minify"
+    "build": "esbuild src/main.ts --platform=node --bundle --sourcemap --outfile=index.js --minify --legal-comments=none"
   },
   "dependencies": {
     "cookie-parser": "^1.4.6",
