@@ -1,0 +1,102 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+enum TaskType {
+  PRODUCT_SYNC
+  ORDER_SYNC
+  ORDER_SUBMIT
+}
+
+model Task {
+  id        String   @id
+  userId    String
+  type      TaskType
+  title     String
+  logs      Json
+  finished  Boolean
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model Product {
+  id          String @id
+  userId      String
+  serviceName String // 구매처 서비스 ID
+  name        String
+  imgUrl      String
+  price       Int
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+model Good {
+  id     String @id
+  userId String
+
+  productId String
+
+  serviceName String // 판매처 이름
+  sellingId   String // 판매처의 상품 ID
+
+  name        String // 쇼핑몰에 등록되는 상품은 제품과 이름이 다를 수 있다.
+  optionName  String
+  optionPrice Int
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @default(now()) @updatedAt
+}
+
+enum OrderStatus {
+  PAID
+  CHECKED
+  DELIVERING
+  DELIVERED
+  CONFIRMED
+  CANCELLED
+}
+
+model Order {
+  id     String @id
+  userId String
+
+  status      OrderStatus
+  serviceName String // 판매처 서비스 이름
+  shopId      String // 판매처상의 주문ID
+  shopGoodId  String
+  sellerCode  String // 판매처에 저장되는 메모
+  goodInfo    Json
+  receiver    Json?
+  delivery    Json?
+  price       Int
+  quantity    Int
+  memo        String? // 자동판매 서비스에서 저장되는 메모
+  goodId      String
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @default(now()) @updatedAt
+
+  @@unique([serviceName, shopId])
+}
+
+enum ServiceAccountStatus {
+  NORMAL
+  INVALID_CREDENTIAL
+  TWO_FACTOR
+}
+
+model ServiceAccount {
+  id          String               @id
+  userId      String
+  status      ServiceAccountStatus
+  name        String
+  serviceName String
+  accountInfo Json
+  createdAt   DateTime             @default(now())
+  updatedAt   DateTime             @default(now()) @updatedAt
+}

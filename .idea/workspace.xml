@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="433a55cd-9cb7-4549-a3b5-87bcfc332c14" name="Changes" comment="빌드시 production용 dependency만 다운로드">
+    <list default="true" id="0da31a8d-643f-4e04-987d-092facc9683c" name="Changes" comment="initˆ">
+      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.test" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -13,6 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FormatOnSaveOptions">
+    <option name="myRunOnSave" value="false" />
     <option name="myAllFileTypesSelected" value="true" />
     <option name="mySelectedFileTypes">
       <set />
@@ -20,15 +24,17 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="SOFT" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="OptimizeOnSaveOptions">
+    <option name="myRunOnSave" value="true" />
+  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
+  &quot;associatedIndex&quot;: 3
 }</component>
-  <component name="ProjectId" id="2UWThsBhK9KqB1j95KcJoOQmRAK" />
+  <component name="ProjectId" id="2WqaqH9Sem6UoAP2K2d6hZbl1Ga" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -38,68 +44,81 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "com.google.cloudcode.ide_session_index": "20230827_0002",
+    "com.google.cloudcode.ide_session_index": "20231020_0001",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/inithink/project/templates/express-ts-template/src/routes",
+    "last_opened_file_path": "/Users/inithink/project/auto-selling/auto-selling-backend/src/routes",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.standard": "",
+    "nodejs.jest.jest_package": "/Users/inithink/project/auto-selling/auto-selling-backend/node_modules/jest",
     "nodejs_package_manager_path": "yarn",
+    "prettierjs.PrettierConfiguration.Package": "/Users/inithink/project/auto-selling/auto-selling-backend/node_modules/prettier",
     "settings.editor.selected.configurable": "actions.on.save",
-    "ts.external.directory.path": "/Users/inithink/project/templates/express-ts-template/node_modules/typescript/lib",
+    "ts.external.directory.path": "/Users/inithink/project/auto-selling/auto-selling-backend/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ],
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JavaScript"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/routes" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/libs" />
+      <recent name="$PROJECT_DIR$/src/core" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/libs" />
+      <recent name="$PROJECT_DIR$/src/good" />
+      <recent name="$PROJECT_DIR$/src/infrastructure" />
+      <recent name="$PROJECT_DIR$/src/core" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="es6.move.members.recent.items">
+      <recent name="$PROJECT_DIR$/test/e2e/date.regex.ts" />
+      <recent name="$PROJECT_DIR$/src/service-account/change-service-account.dto.ts" />
+      <recent name="$PROJECT_DIR$/src/service-account/add-service-account-d-t.o.ts" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.Dockerfile">
-    <configuration name="GET /.should return 200" type="JavaScriptTestRunnerVitest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="npm.test:e2e">
+    <configuration name="/service-account.GET /.로그인 한사용자는 목록 반환 (1)" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
-      <vitest-package value="$PROJECT_DIR$/node_modules/vitest" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
-      <vitest-options value="--run" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/routes/index.test.ts" />
+      <test-file value="$PROJECT_DIR$/test/e2e/service-account.controller.spec.ts" />
       <test-names>
+        <test-name value="/service-account" />
         <test-name value="GET /" />
-        <test-name value="should return 200" />
+        <test-name value="로그인 한사용자는 목록 반환" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="imageTag" value="test" />
-          <option name="containerName" value="test" />
-          <option name="portBindings">
-            <list>
-              <DockerPortBindingImpl>
-                <option name="containerPort" value="80" />
-                <option name="hostPort" value="4500" />
-              </DockerPortBindingImpl>
-            </list>
-          </option>
-          <option name="sourceFilePath" value="Dockerfile" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
-      <deployment type="dockerfile">
-        <settings />
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="format" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="build" />
+        <script value="format" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="prisma:generate" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="prisma:generate" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -115,100 +134,105 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="test:e2e" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test:e2e" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Docker.Dockerfile" />
-      <item itemvalue="npm.build" />
+      <item itemvalue="Jest./service-account.GET /.로그인 한사용자는 목록 반환 (1)" />
       <item itemvalue="npm.start" />
-      <item itemvalue="Vitest.GET /.should return 200" />
+      <item itemvalue="npm.test:e2e" />
+      <item itemvalue="npm.prisma:generate" />
+      <item itemvalue="npm.format" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Docker.Dockerfile" />
-        <item itemvalue="npm.build" />
-        <item itemvalue="Vitest.GET /.should return 200" />
+        <item itemvalue="npm.test:e2e" />
+        <item itemvalue="Jest./service-account.GET /.로그인 한사용자는 목록 반환 (1)" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.prisma:generate" />
+        <item itemvalue="npm.format" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="433a55cd-9cb7-4549-a3b5-87bcfc332c14" name="Changes" comment="" />
+      <changelist id="0da31a8d-643f-4e04-987d-092facc9683c" name="Changes" comment="" />
       <created>1692930066019</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1692930066019</updated>
-      <workItem from="1693054460026" duration="1927000" />
-      <workItem from="1693056985964" duration="1341000" />
-      <workItem from="1693064380659" duration="761000" />
-      <workItem from="1693122930126" duration="11000" />
-      <workItem from="1693128221838" duration="1077000" />
+      <workItem from="1697462754032" duration="7477000" />
+      <workItem from="1697541488748" duration="949000" />
+      <workItem from="1697542645848" duration="336000" />
+      <workItem from="1697544717450" duration="13438000" />
+      <workItem from="1697719690634" duration="4595000" />
+      <workItem from="1697796707822" duration="3021000" />
     </task>
-    <task id="LOCAL-00001" summary="init">
+    <task id="LOCAL-00001" summary="cognito 인증 추가, e2e 테스트 기반 마련">
       <option name="closed" value="true" />
-      <created>1693054530460</created>
+      <created>1697552693849</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1693054530460</updated>
+      <updated>1697552693849</updated>
     </task>
-    <task id="LOCAL-00002" summary="빌드 최적화">
+    <task id="LOCAL-00002" summary="cognito 인증 추가, e2e 테스트 기반 마련">
       <option name="closed" value="true" />
-      <created>1693055246025</created>
+      <created>1697552708689</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1693055246025</updated>
+      <updated>1697552708689</updated>
     </task>
-    <task id="LOCAL-00003" summary="vitest 추가">
+    <task id="LOCAL-00003" summary="cognito 인증 추가, e2e 테스트 기반 마련">
       <option name="closed" value="true" />
-      <created>1693056056127</created>
+      <created>1697552832421</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1693056056127</updated>
+      <updated>1697552832421</updated>
     </task>
-    <task id="LOCAL-00004" summary="vscode 삭제">
+    <task id="LOCAL-00004" summary="롤 추가">
       <option name="closed" value="true" />
-      <created>1693056152217</created>
+      <created>1697553497425</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1693056152217</updated>
+      <updated>1697553497426</updated>
     </task>
-    <task id="LOCAL-00005" summary="esbuild 추가">
+    <task id="LOCAL-00005" summary="코드 정리">
       <option name="closed" value="true" />
-      <created>1693128518410</created>
+      <created>1697553614126</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1693128518410</updated>
+      <updated>1697553614126</updated>
     </task>
-    <task id="LOCAL-00006" summary="minify">
+    <task id="LOCAL-00006" summary="코드 정리">
       <option name="closed" value="true" />
-      <created>1693128562132</created>
+      <created>1697553645886</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1693128562133</updated>
+      <updated>1697553645886</updated>
     </task>
-    <task id="LOCAL-00007" summary="라이센스 comment 삭제">
+    <task id="LOCAL-00007" summary="initˆ">
       <option name="closed" value="true" />
-      <created>1693128684962</created>
+      <created>1697799716036</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1693128684962</updated>
+      <updated>1697799716036</updated>
     </task>
-    <task id="LOCAL-00008" summary="빌드시 production용 dependency만 다운로드">
-      <option name="closed" value="true" />
-      <created>1693128814430</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1693128814430</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,14 +250,26 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="cognito 인증 추가, e2e 테스트 기반 마련" />
+    <MESSAGE value="롤 추가" />
+    <MESSAGE value="코드 정리" />
     <MESSAGE value="init" />
-    <MESSAGE value="빌드 최적화" />
-    <MESSAGE value="vitest 추가" />
-    <MESSAGE value="vscode 삭제" />
-    <MESSAGE value="esbuild 추가" />
-    <MESSAGE value="minify" />
-    <MESSAGE value="라이센스 comment 삭제" />
-    <MESSAGE value="빌드시 production용 dependency만 다운로드" />
-    <option name="LAST_COMMIT_MESSAGE" value="빌드시 production용 dependency만 다운로드" />
+    <MESSAGE value="initˆ" />
+    <option name="LAST_COMMIT_MESSAGE" value="initˆ" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/test/e2e/service-account.spec.ts</url>
+          <line>38</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
